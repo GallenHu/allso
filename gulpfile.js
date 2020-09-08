@@ -29,7 +29,7 @@ gulp.task('styles', ['styles_single'], function() {
         .pipe($.sourcemaps.init())
         .pipe($.concat('main.css'))
         .pipe($.less())
-        .pipe($.inlineBase64(baseConfig))
+        // .pipe($.inlineBase64(baseConfig))
         .pipe($.autoprefixer({
             browsers: ['> 5%']
         }))
