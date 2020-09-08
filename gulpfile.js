@@ -9,7 +9,7 @@ gulp.task('watch', ['default'], function() {
 
 
 //default
-gulp.task('default', ['styles', 'js', 'html']);
+gulp.task('default', ['styles', 'js', 'html', 'static']);
 
 
 //////////////////
@@ -78,4 +78,9 @@ gulp.task('html', ['styles', 'js'], function() {
             sortAttributes: true
         }))
         .pipe(gulp.dest('.'));
+});
+
+gulp.task('static', function () {
+    return gulp.src(baseConfig.baseDir + '*.*')
+        .pipe(gulp.dest('dist'));
 });
