@@ -14,6 +14,8 @@
 
 ## 链接地址
 
+修改版：http://img.hinpc.com/allso
+
 **开始使用 ALLSO：<http://h2y.github.io/allso>**
 
 Github 项目主页：[h2y/allso](https://github.com/h2y/allso/)
